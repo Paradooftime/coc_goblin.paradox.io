@@ -1,5 +1,11 @@
 let menu = document.querySelector('#menu-icon');
 let navlist = document.querySelector('.navlist');
+var color=document.querySelector('#dadp');
+        var colo=document.querySelector('.hero');
+
+color.onclick = () => {
+    document.body.classList.toggle("active");
+}
 
 menu.onclick = () => {
     menu.classList.toggle('bx-x');
@@ -26,6 +32,5 @@ sr.reveal('.icons', {
 });
 sr.reveal('.scroll-down', {
   delay: 600,
-  origin: 'right'
+  origin: 'right'
 });
-
