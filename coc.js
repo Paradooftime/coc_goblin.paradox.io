@@ -1,36 +1,36 @@
-let menu = document.querySelector('#menu-icon');
-let navlist = document.querySelector('.navlist');
-var color=document.querySelector('#dadp');
-        var colo=document.querySelector('.hero');
+let menu = document.querySelector("#menu-icon");
+let navlist = document.querySelector(".navlist");
+var color = document.querySelector("#dadp");
+var colo = document.querySelector(".hero");
 
 color.onclick = () => {
-    document.body.classList.toggle("active");
-}
+  document.body.classList.toggle("active");
+};
 
 menu.onclick = () => {
-    menu.classList.toggle('bx-x');
-    navlist.classList.toggle('open');
-}
+  menu.classList.toggle("bx-x");
+  navlist.classList.toggle("open");
+};
 const sr = ScrollReveal({
-  distance: '65px',
+  distance: "65px",
   duration: 2600,
   delay: 450,
-  reset: true
+  reset: true,
 });
 
-sr.reveal('.hero-text', {
+sr.reveal(".hero-text", {
   delay: 200,
-  origin: 'top'
+  origin: "top",
 });
-sr.reveal('.hero-img', {
+sr.reveal(".hero-img", {
   delay: 450,
-  origin: 'right'
+  origin: "right",
 });
-sr.reveal('.icons', {
+sr.reveal(".icons", {
   delay: 500,
-  origin: 'left'
+  origin: "left",
 });
-sr.reveal('.scroll-down', {
+sr.reveal(".scroll-down", {
   delay: 600,
-  origin: 'right'
+  origin: "right",
 });
