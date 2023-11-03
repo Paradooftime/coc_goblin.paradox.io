@@ -260,7 +260,7 @@ section {
     top: 100%;
     right: -100%;
     width: 300px;
-    height: 55vh;
+    height: 50vh;
     background: var(--ul);
     display: flex;
     align-items: center;
