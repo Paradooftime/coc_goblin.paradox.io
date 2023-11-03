@@ -11,7 +11,7 @@
   --wh: #ff17e0d9;
   --nav: #133c1793;
 }
-.active {
+.a2{
   --bg-root: #000000d6;
   --my-07: #767272;
   --ul: #4b4c4b;
@@ -19,6 +19,20 @@
   --wh: #fff156cb;
 
   --nav: #000000;
+}
+.a1{
+  --bg-root: linear-gradient(
+    245.59deg,
+    #07ae23 0%,
+    #37763d 28.53%,
+    #133c17 75.52%
+  );
+  --my-07: #07ae23;
+  --ul: #4d9559;
+  --li-hover: rgba(84, 223, 176, 0.432);
+  --wh: #ff17e0d9;
+  --nav: #133c1793;
+
 }
 ::selection {
   color: var(--wh);
@@ -246,7 +260,7 @@ section {
     top: 100%;
     right: -100%;
     width: 300px;
-    height: 45vh;
+    height: 55vh;
     background: var(--ul);
     display: flex;
     align-items: center;
@@ -429,4 +443,10 @@ section {
   ::selection {
     color: var(--wh);
   }
+}
+#rtf{
+  display: none;
+}
+#i2{
+  display: none;
 }
