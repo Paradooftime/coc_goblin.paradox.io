@@ -216,7 +216,7 @@ section {
     transition: 0.2s;
   }
   .hero-text {
-    padding-top: 115px;
+    padding-top: 100px;
   }
   .hero-img {
     text-align: center;
@@ -253,6 +253,17 @@ section {
     flex-direction: column;
     padding: 50px 20px;
     transition: all 0.6s ease;
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    width: 15rem;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    z-index: 100;
   }
   .navlist a {
     margin-left: 0;
@@ -267,6 +278,80 @@ section {
   .hero-img img {
     width: 100%;
     height: auto;
+  }
+  .hero {
+    overflow-x: hidden;
+  }
+  .logo {
+    font-size: medium;
+  }
+  #menu-icon {
+    margin-right: 1.8rem;
+    font-size: medium;
+  }
+  .navlist {
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    width: 15rem;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    z-index: 100;
+  }
+  .navlist a {
+    transition: all ease 0.8s;
+  }
+  header {
+    background-color: var(--nav);
+  }
+  .navlist li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: absolute; */
+    /* background-color: red; */
+    width: 170px;
+    /* margin-left: -26px; */
+    transition: all ease 0.1s;
+  }
+  .navlist li:hover {
+    background-color: var(--li-hover);
+    border-radius: 9px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  }
+  .navlist li:hover a {
+    color: black;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    scale: 1.1;
+  }
+  .navlist a {
+    /* line-height: 9rem; */
+
+    display: block;
+    /* background-color: aqua ; */
+  }
+  .hero-text h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+  .hero-text a {
+    font-size: 18px;
+    padding: 5px;
+  }
+  .hero-text a:hover {
+    scale: 1.2;
+    border: 2px solid #07ae23;
+    background-color: #67ff8d99;
+    color: black;
+  }
+
+  ::selection {
+    color: var(--wh);
   }
 }
 @media (max-width: 400px) {
